@@ -1,0 +1,28 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import Default from "@astrojs/starlight/components/Footer.astro";
+const year = new Date().getFullYear();
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<hr />
+
+<p>&copy; {year} Kittynode contributors – <a href="https://github.com/kittynode/kittynode/blob/main/LICENSE">MIT License</a><br />Donate: <a href="https://app.ens.domains/kittynode.eth">kittynode.eth</a></p>
+
+<style>
+  a {
+    color: var(--sl-color-text-accent);
+  }
+  a:hover {
+    color: var(--sl-color-white);
+  }
+  p {
+    text-align: center;
+    font-size: var(--sl-text-sm);
+  }
+  hr {
+    border: 0;
+    border-bottom: 1px solid var(--sl-color-hairline);
+  }
+</style>
