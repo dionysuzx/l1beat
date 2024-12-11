@@ -6,7 +6,7 @@ import starlightImageZoom from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://kittynode.io",
+  site: "https://l1beat.pages.dev",
   integrations: [
     starlight({
       plugins: [starlightLinksValidator(), starlightImageZoom()],
