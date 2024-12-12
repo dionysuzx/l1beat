@@ -34,10 +34,6 @@ export default defineConfig({
           label: "Learn",
           items: [
             { label: "What is Kittynode?", slug: "learn/what-is-kittynode" },
-            {
-              label: "Architecture",
-              slug: "learn/architecture",
-            },
           ],
         },
         {
